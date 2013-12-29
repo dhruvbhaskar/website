@@ -1,0 +1,107 @@
+/*
+AUTHOR: Dhruv Bhaskar
+LAST MODIFIED: 27 December 2013
+*/
+
+#body{
+	position:absolute;
+	width:100%;
+}
+
+#header{
+	position:relative;
+	left:50%;
+	height:165px;
+	width:1100px;	
+	margin-left:-550px;
+	padding:5px 20px 20px 20px;
+}
+
+#container{
+	position:relative;	
+	width:1100px;
+	left:50%;
+	margin-left:-550px;
+	padding:20px;;
+}
+
+#menu{
+	float:left;
+	padding:20px;
+	width:250px;
+	height:200px;
+}
+
+.menu_item{
+	padding:8px;
+	height:44px;
+	border:1px solid black;
+	font-family:'Roboto';
+	font-size:28px;
+	color:#000;
+	background:#DDD;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	-webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+.menu_item:hover{
+	background:#CCC;
+	cursor:pointer;
+}
+
+.menu_item_empty{
+	padding:7px;
+}
+
+.menu_icon{
+	vertical-align:middle;
+	padding:0px 10px 0px 5px;
+}
+
+#content{
+	position:relative;
+	margin-left:320px;
+	width:700px;
+	padding:15px;
+}
+
+#footer{
+	position:relative;
+	left:50%;
+	height:200px;
+	width:1100px;	
+	margin-left:-550px;
+	padding:20px;
+	border-top:4px solid #0A2A1B;
+	font-family:'Old Standard TT';
+	font-size:18px;
+}
+
+#footer_links tr{
+	cursor:pointer;
+	font-size:22px;
+	line-height:34px;
+	font-family:'Ubuntu';
+}
+
+.link{
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.link:hover{
+	color:#1E90FF;
+}
+
+#footer_map{
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
