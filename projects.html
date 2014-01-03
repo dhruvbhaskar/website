@@ -1,0 +1,124 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="core/deck.core.css">
+<link rel="stylesheet" media="screen" href="themes/transition/fade.css">
+<link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+<link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+<link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+<link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+<script src="jquery.min.js"></script>
+<script src="modernizr.custom.js"></script>
+<script src="core/deck.core.js"></script>
+
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<style type="text/css">
+
+.heading{
+	font-size:44px;
+	color: #0b7495;
+	padding: 5px 0px 5px 0px;
+}
+
+.subheading{
+	font-family:'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	padding: 0px 0px 15px 0px;
+}
+
+.features{
+	font-size:20px;
+	float:left;
+	width: 300px;
+	height: 340px;
+}
+
+.pic{
+	float:right;
+	width: 300px;
+	height: 340px;
+}
+
+a{
+	text-decoration: none;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	color: black;
+}
+
+a:hover{
+text-decoration: none;
+	cursor: pointer;
+	color: #0b7495;
+}
+</style>
+
+</head>
+
+<body>
+
+	<div class="deck-container">
+
+			<!-- Begin slides. Just make elements with a class of slide. -->
+			
+			<section class="slide">
+				<br>
+				<div class="heading"><center>Personal Projects</center></div><br><br>
+				<div class="subheading">
+				<center>Use left and right arrow keys to navigate</center><br><br>
+				</div>
+				<div style="font-family:'Lato';font-size:20px"><center>Created Using Deck.js</center></div>
+			</section>
+			
+			<section class="slide">
+				<div class="heading"><center>Tic-Tac-Toe</center></div>
+				<div class="subheading"><center>Tic-Tac-Toe console game written in C</center></div>
+				
+				<div class="features">
+				<span style="font-weight:700">Features:</span><br/><br/><ul style="line-height:175%;">
+				<li><span style="font-weight:700">Easy level</span> : Computer chooses its move randomly</li>
+				<li><span style="font-weight:700">Advanced level</span> : Computer actively tries to prevent the user from winning</li>
+				</ul><br>
+				<a onclick="javascript:window.open('https://github.com/dhruvbhaskar/tic-tac-toe')">View Source Code</a></div>
+				
+				<div class="pic" style="background:#fff;border:1px solid black;">
+				<img src="projsimg/tictactoe.png" style="padding:0px 0px 0px 10px;width:290px">
+				</div>
+				
+				<div style="clear:both;"></div>
+			</section>
+	
+		
+		   <!-- deck.navigation snippet -->
+			<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+			<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+			<!-- deck.status snippet -->
+			<p class="deck-status">
+			<span class="deck-status-current"></span>
+			/
+			<span class="deck-status-total"></span>
+			</p>
+		
+	</div>
+	
+	
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 
 <!--
 AUTHOR: Dhruv Bhaskar
-LAST MODIFIED: 27 December 2013
+LAST MODIFIED: 2 January 2013
 -->
 
 <head>
@@ -11,6 +11,7 @@ LAST MODIFIED: 27 December 2013
 <meta name="keywords" content="Dhruv, Bhaskar, Personal, Website, Portfolio">
 <meta name="author" content="Dhruv Bhaskar">
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
 
 <!-- Load Google fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,500italic,700' rel='stylesheet' type='text/css'>
@@ -77,7 +78,7 @@ LAST MODIFIED: 27 December 2013
 		 <td valign="middle"><img src="github.png" height="32" width="32"/></td>
 		 <td valign="middle"><span class="link">GitHub</span></td>
 		</tr>
-		<tr onclick="javascript:document.location='www.google.com';">
+		<tr onclick="javascript:document.location='http://www.google.com';">
 		 <td><img src="linkedin.png" height="32" width="32"/></td>
 		 <td><span class="link">LinkedIn</span></td>
 		</tr>
@@ -96,7 +97,7 @@ LAST MODIFIED: 27 December 2013
 /* menu positioning */
 $(window).load(function(){
     $(window).scroll(function(){
-        if($(window).scrollTop()>210){
+        if ($(window).scrollTop()>210){
             $('#menu').css('position', 'fixed');
             $('#menu').css('top', 0);
         } else {
@@ -114,7 +115,7 @@ $('#projects').click(function(){
 });
 
 $('#resume').click(function(){
-	$('#content').hide().load('resume.php').show();
+	window.open('resume.pdf');
 });
 
 $('#banner').click(function(){

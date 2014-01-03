@@ -1,6 +1,6 @@
 /*
 AUTHOR: Dhruv Bhaskar
-LAST MODIFIED: 27 December 2013
+LAST MODIFIED: 1 January 2013
 */
 
 #body{
@@ -26,6 +26,8 @@ LAST MODIFIED: 27 December 2013
 }
 
 #menu{
+	_left:0;
+	_position:absolute;
 	float:left;
 	padding:20px;
 	width:250px;
@@ -36,7 +38,7 @@ LAST MODIFIED: 27 December 2013
 	padding:8px;
 	height:44px;
 	border:1px solid black;
-	font-family:'Roboto';
+	font-family:'Roboto', sans-serif;
 	font-size:28px;
 	color:#000;
 	background:#DDD;
@@ -86,7 +88,7 @@ LAST MODIFIED: 27 December 2013
 	cursor:pointer;
 	font-size:22px;
 	line-height:34px;
-	font-family:'Ubuntu';
+	font-family:'Ubuntu', sans-serif;
 }
 
 .link{

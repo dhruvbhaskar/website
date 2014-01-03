@@ -23,7 +23,7 @@ LAST MODIFIED: 27 December 2013
 	height:150px;
 	top:120px;
 	left:350px;
-	font-family:'Pacifico';
+	font-family:'Pacifico', sans-serif;
 	font-size:26px;
 	color:#61210B;
 }
@@ -34,7 +34,7 @@ LAST MODIFIED: 27 December 2013
 	height:150px;
 	top:100px;
 	left:0px;
-	font-family:'Pacifico';
+	font-family:'Pacifico', sans-serif;
 	font-size:26px;
 	color:teal;
 }
@@ -45,7 +45,7 @@ LAST MODIFIED: 27 December 2013
 	height:400px;
 	top:50px;
 	left:600px;
-	font-family:'Pacifico';
+	font-family:'Pacifico', sans-serif;
 	font-size:26px;
 	color:#5E610B;
 }
