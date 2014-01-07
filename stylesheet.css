@@ -37,7 +37,7 @@ LAST MODIFIED: 1 January 2013
 .menu_item{
 	padding:8px;
 	height:44px;
-	border:1px solid black;
+	border:2px solid #585858;
 	font-family:'Roboto', sans-serif;
 	font-size:28px;
 	color:#000;
@@ -48,12 +48,13 @@ LAST MODIFIED: 1 January 2013
 	-webkit-transition:.5s;
 	transition:.5s;
 	-webkit-border-radius:7px;
-    border-radius:7px;
+	border-radius:7px;
 }
 
 .menu_item:hover{
 	background:#CCC;
 	cursor:pointer;
+	border:2px solid black;
 }
 
 .menu_item_empty{

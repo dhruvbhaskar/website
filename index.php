@@ -2,7 +2,7 @@
 
 <!--
 AUTHOR: Dhruv Bhaskar
-LAST MODIFIED: 2 January 2013
+LAST MODIFIED: 6 January 2013
 -->
 
 <head>
@@ -78,7 +78,7 @@ LAST MODIFIED: 2 January 2013
 		 <td valign="middle"><img src="github.png" height="32" width="32"/></td>
 		 <td valign="middle"><span class="link">GitHub</span></td>
 		</tr>
-		<tr onclick="javascript:document.location='http://www.google.com';">
+		<tr onclick="javascript:document.location='http://www.linkedin.com/pub/dhruv-bhaskar/89/246/840';">
 		 <td><img src="linkedin.png" height="32" width="32"/></td>
 		 <td><span class="link">LinkedIn</span></td>
 		</tr>
@@ -108,10 +108,16 @@ $(window).load(function(){
 
 $('#notes').click(function(){
 	$('#content').hide().load('notes.php').show();
+	$('html, body').animate({
+		scrollTop: $("#content").offset().top
+	}, 400);
 });
 
 $('#projects').click(function(){
 	$('#content').hide().load('projects.php').show();
+	$('html, body').animate({
+		scrollTop: $("#content").offset().top
+	}, 400);
 });
 
 $('#resume').click(function(){
