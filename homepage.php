@@ -2,7 +2,7 @@
 
 <!--
 AUTHOR: Dhruv Bhaskar
-LAST MODIFIED: 27 December 2013
+LAST MODIFIED: 10 January 2014
 -->
 
 <head>
@@ -26,6 +26,7 @@ LAST MODIFIED: 27 December 2013
 	font-family:'Pacifico', sans-serif;
 	font-size:26px;
 	color:#61210B;
+	visibility:hidden;
 }
 
 #resume_content{
@@ -37,6 +38,7 @@ LAST MODIFIED: 27 December 2013
 	font-family:'Pacifico', sans-serif;
 	font-size:26px;
 	color:teal;
+	visibility:hidden;
 }
 
 #projects_content{
@@ -48,6 +50,7 @@ LAST MODIFIED: 27 December 2013
 	font-family:'Pacifico', sans-serif;
 	font-size:26px;
 	color:#5E610B;
+	visibility:hidden;
 }
 
 </style>
@@ -64,7 +67,7 @@ $(document).ready(function(){
 	$("#projects").hover(function(){
 	  $("#cog").css("visibility", "visible");
 	  $("#proj").css("fill", "#151515");
-	  $("#projects_content").fadeIn("3000");
+	  $("#projects_content").css("visibility", "visible").hide().fadeIn("3000");
 	  }, function(){
 	  $("#cog").css("visibility", "hidden"); 
 	  $("#proj").css("fill", "#cccccc");
@@ -73,7 +76,7 @@ $(document).ready(function(){
 
 	$("#resume").hover(function(){
 	  $("#res").css("fill", "#151515");
-	  $("#resume_content").fadeIn("3000");
+	  $("#resume_content").css("visibility", "visible").hide().fadeIn("3000");
 	  }, function(){
 	  $("#res").css("fill", "#cccccc");
 	  $("#resume_content").fadeOut("2000");
@@ -81,7 +84,7 @@ $(document).ready(function(){
 
 	$("#notes").hover(function(){
 	  $("#not").css("fill", "#151515");
-	  $("#notes_content").fadeIn("3000");
+	  $("#notes_content").css("visibility", "visible").hide().fadeIn("3000");
 	  }, function(){
 	  $("#not").css("fill", "#cccccc");
 	  $("#notes_content").fadeOut("2000");
@@ -104,12 +107,12 @@ In my spare time, I like working on personal projects, listening to music and pl
 </div>
 
 <script = "text/javascript">
-
+/*
 $(document).ready(function(){
 	$("#notes_content").hide();
 	$("#resume_content").hide();
 	$("#projects_content").hide();
-});
+});*/
 
 </script>
 
